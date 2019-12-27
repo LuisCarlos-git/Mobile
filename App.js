@@ -1,35 +1,11 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import Routes from './src/router';
 
 
 function App(){
-  return(
-    <View style={styles.container}>
-      <Text style={styles.text}>Olá Luis Carlos</Text>
-      <Text style={styles.text}>Tudo bem com você??</Text>
-    </View>
-  );
+  return <Routes />
 }
 
-const styles = StyleSheet.create({
-  text:{
-    color: '#fff',
-    fontSize: 30,
-  },
-  container: {
-    backgroundColor: '#000',
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
 
-});
 
 export default App;
